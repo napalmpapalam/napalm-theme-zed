@@ -7,4 +7,4 @@ A minimalistic dark theme, mix of GitHub Dark UI theme and VSCode Dark+ theme sy
 - Run [Zed Preview](https://zed.dev/releases/preview)
 - Select theme (Settings -> Select Theme).
 
-![](img/screenshot_theme.png)
+![](img/theme.png)
