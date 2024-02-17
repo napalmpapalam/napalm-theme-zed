@@ -1,4 +1,4 @@
-# napalmpapalam theme for the Zed Code Editor
+# Napalm theme for the Zed Code Editor
 
 A minimalistic dark theme, mix of GitHub Dark UI theme and VSCode Dark+ theme syntax highlighting.
 
