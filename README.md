@@ -3,7 +3,7 @@
 A minimalistic dark theme, mix of GitHub Dark UI theme and VSCode Dark+ theme syntax highlighting.
 
 ## Installing
-- Copy the [napalmpapalam-theme-zed.json](./napalmpapalam-theme-zed.json) file from this repo into `~/.config/zed/themes`.
+- Copy the [extension.json](./extension.json) file from this repo into `~/.config/zed/themes`.
 - Run [Zed Preview](https://zed.dev/releases/preview)
 - Select theme (Settings -> Select Theme).
 
