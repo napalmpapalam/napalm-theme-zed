@@ -1,7 +1,6 @@
 {
   "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
   "name": "Napalm Theme",
-  "version": "0.1.0",
   "author": "Semen Loktionov <loktionov.kh@gmail.com>",
   "themes": [
     {
