@@ -1,0 +1,7 @@
+name = "Napalm Theme"
+version = "0.0.3"
+authors = ["Semen Loktionov <loktionov.kh@gmail.com>"]
+description = "A minimalistic dark theme, mix of GitHub Dark UI theme and VSCode Dark+ theme syntax highlighting."
+repository = "https://github.com/napalmpapalam/napalm-theme-zed"
+id = "napalm-theme"
+schema_version = 1
