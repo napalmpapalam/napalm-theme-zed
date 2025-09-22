@@ -1,5 +1,5 @@
 {
-  "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
   "name": "Napalm Theme",
   "author": "Semen Loktionov <loktionov.kh@gmail.com>",
   "themes": [
@@ -7,6 +7,9 @@
       "name": "Napalm Github x VSCode",
       "appearance": "dark",
       "style": {
+        "accent": "#388bfd",
+        "foreground": "#c9d1d9",
+        "muted": "#c9d1d9",
         "border": "#30363d",
         "border.variant": "#30363d",
         "border.focused": "#388bfd",
@@ -28,21 +31,29 @@
         "ghost_element.selected": "#21262d",
         "ghost_element.disabled": null,
         "text": "#D4D4D4",
-        "text.muted": "#8b949e",
-        "text.placeholder": null,
-        "text.disabled": null,
-        "text.accent": null,
+        "text.muted": "#c9d1d9",
+        "text.link": "#58a6ff",
+        "text.link.active": "#58a6ff",
+        "text.error": "#f85149",
+        "text.placeholder": "#484f58",
+        "text.disabled": "#8b949e",
+        "text.accent": "#388bfd",
         "icon": null,
         "icon.muted": null,
         "icon.disabled": null,
         "icon.placeholder": null,
         "icon.accent": null,
+        "diff.inserted.background": "#2ea04333",
+        "diff.removed.background": "#da363333",
+        "scrollbar.shadow": "#00000088",
+        "scrollbar.thumb.active_background": "#484F5888",
         "status_bar.background": "#0d1117",
         "title_bar.background": "#0d1117",
         "toolbar.background": "#0d1117",
         "tab_bar.background": "#090c10",
         "tab.inactive_background": "#090c10",
         "tab.active_background": "#0d1117",
+        "tab.active.border_top": "#f78166",
         "search.match_background": null,
         "panel.background": "#090c10",
         "panel.focused_border": "#388bfd",
@@ -54,8 +65,15 @@
         "scrollbar.track.border": "#010409",
         "editor.foreground": "#94DBFD",
         "editor.background": "#0d1117",
+        "editor.selection": "#3392FF44",
         "editor.gutter.background": "#0d1117",
+        "editor.gutter.added": "#56d364",
+        "status_bar.debug.background": "#f78166",
+        "editor.gutter.modified": "#9e6a03",
+        "editor.gutter.deleted": "#f85149",
+        "panel.title.active.border": "#f78166",
         "editor.subheader.background": null,
+        "editor.cursor": "#79c0ff",
         "editor.active_line.background": "#161b22",
         "editor.highlighted_line.background": null,
         "editor.line_number": "#8b949e",
@@ -97,13 +115,13 @@
         "conflict": "#e3b341",
         "conflict.background": "#1c2128",
         "conflict.border": null,
-        "created": "#196c2e",
+        "created": "#56d364",
         "created.background": null,
         "created.border": null,
         "deleted": "#b62324",
         "deleted.background": "#1c2128",
         "deleted.border": null,
-        "error": null,
+        "error": "#f85149",
         "error.background": "#1c2128",
         "error.border": null,
         "hidden": "#8b949e",
@@ -118,7 +136,7 @@
         "info": null,
         "info.background": null,
         "info.border": null,
-        "modified": "#9e6a03",
+        "modified": "#e3b341",
         "modified.background": null,
         "modified.border": null,
         "predictive": null,
@@ -127,19 +145,26 @@
         "renamed": null,
         "renamed.background": null,
         "renamed.border": null,
-        "success": null,
+        "success": "#238636",
         "success.background": null,
         "success.border": null,
         "unreachable": null,
         "unreachable.background": null,
         "unreachable.border": null,
-        "warning": null,
+        "warning": "#f0883e",
         "warning.background": "#1c2128",
         "warning.border": null,
+        "git.added": "#56d364",
+        "git.modified": "#e3b341",
+        "git.deleted": "#f85149",
+        "git.untracked": "#56d364",
+        "git.ignored": "#484f58",
+        "git.conflicting": "#e3b341",
+        "git.submodule": "#8b949e",
         "players": [],
         "syntax": {
           "attribute": {
-            "color": "#9cdcfe",
+            "color": "#9CDCFE",
             "font_style": null,
             "font_weight": null
           },
@@ -159,7 +184,42 @@
             "font_weight": null
           },
           "constant": {
-            "color": "#42B3FE",
+            "color": "#4FC1FF",
+            "font_style": null,
+            "font_weight": null
+          },
+          "enum_member": {
+            "color": "#4FC1FF",
+            "font_style": null,
+            "font_weight": null
+          },
+          "tag": {
+            "color": "#569CD6",
+            "font_style": null,
+            "font_weight": null
+          },
+          "punctuation": {
+            "color": "#808080",
+            "font_style": null,
+            "font_weight": null
+          },
+          "class": {
+            "color": "#4EC9B0",
+            "font_style": null,
+            "font_weight": null
+          },
+          "interface": {
+            "color": "#4EC9B0",
+            "font_style": null,
+            "font_weight": null
+          },
+          "enum": {
+            "color": "#4EC9B0",
+            "font_style": null,
+            "font_weight": null
+          },
+          "namespace": {
+            "color": "#4EC9B0",
             "font_style": null,
             "font_weight": null
           },
@@ -184,16 +244,36 @@
             "font_weight": null
           },
           "keyword": {
-            "color": "#4788CC",
+            "color": "#569CD6",
             "font_style": null,
             "font_weight": null
           },
           "number": {
-            "color": "#B4CDA8",
+            "color": "#B5CEA8",
             "font_style": null,
             "font_weight": null
           },
           "operator": {
+            "color": "#D4D4D4",
+            "font_style": null,
+            "font_weight": null
+          },
+          "control": {
+            "color": "#C586C0",
+            "font_style": null,
+            "font_weight": null
+          },
+          "method": {
+            "color": "#DCDCAA",
+            "font_style": null,
+            "font_weight": null
+          },
+          "parameter": {
+            "color": "#9CDCFE",
+            "font_style": null,
+            "font_weight": null
+          },
+          "builtin": {
             "color": "#C586C0",
             "font_style": null,
             "font_weight": null
@@ -205,11 +285,6 @@
           },
           "property": {
             "color": "#9cdcfe",
-            "font_style": null,
-            "font_weight": null
-          },
-          "punctuation": {
-            "color": "#D4D4D4",
             "font_style": null,
             "font_weight": null
           },
@@ -243,8 +318,13 @@
             "font_style": null,
             "font_weight": null
           },
+          "regexp": {
+            "color": "#D16969",
+            "font_style": null,
+            "font_weight": null
+          },
           "string.regex": {
-            "color": "#D7BA7D",
+            "color": "#D16969",
             "font_style": null,
             "font_weight": null
           },
@@ -258,23 +338,18 @@
             "font_style": null,
             "font_weight": null
           },
-          "tag": {
-            "color": "#4788CC",
-            "font_style": null,
-            "font_weight": null
-          },
           "text.literal": {
             "color": "#CD9069",
             "font_style": null,
             "font_weight": null
           },
           "type": {
-            "color": "#39C8B0",
+            "color": "#4EC9B0",
             "font_style": null,
             "font_weight": null
           },
           "variable": {
-            "color": "#42B3FE",
+            "color": "#9CDCFE",
             "font_style": null,
             "font_weight": null
           },
@@ -289,7 +364,22 @@
             "font_weight": null
           },
           "label": {
-            "color": "#DCDCAA",
+            "color": "#C8C8C8",
+            "font_style": null,
+            "font_weight": null
+          },
+          "unit": {
+            "color": "#B5CEA8",
+            "font_style": null,
+            "font_weight": null
+          },
+          "builtin_type": {
+            "color": "#569CD6",
+            "font_style": null,
+            "font_weight": null
+          },
+          "modifier": {
+            "color": "#569CD6",
             "font_style": null,
             "font_weight": null
           }
